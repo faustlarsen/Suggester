@@ -1,28 +1,22 @@
 $(document).ready(function() {
   $("#language").submit(function(event) {
     event.preventDefault();
-    
-    const code = $("input:radio[name=code]:checked").val();
-  if (code === "a","d","g","j","m") {
-    $("#result2").hide();
-    $("#result3").hide();
-    $("#result4").hide();
+
+    const aa = $("input:radio[name=aa]:checked").val();
+    const bb = $("input:radio[name=bb]:checked").val();
+    const cc = $("input:radio[name=cc]:checked").val();
+    const dd = $("input:radio[name=dd]:checked").val();
+    const ee = $("input:radio[name=ee]:checked").val();
+
+
+  if (aa === 'a' && bb === 'd' && cc === 'g' && dd === 'j' && ee === 'm') {
     $("#result1").show();
-  } else if (code === "b","e","h","k","n") {
-    $("#result1").hide();
-    $("#result3").hide();
-    $("#result4").hide();
+
+  } else if (aa === 'b') {
     $("#result2").show();
-  } else if (code === "c","f","i","l","o") {   
-    $("#result1").hide();
-    $("#result2").hide();
-    $("#result4").hide();
-    $("#result3").show();
-  } else 
-    $("#result1").hide();
-    $("#result2").hide();
-    $("#result3").hide();
-    $("#result4").show();
+    
+  
+
   });
 });
 
