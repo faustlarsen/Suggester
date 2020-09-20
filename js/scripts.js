@@ -11,12 +11,26 @@ $(document).ready(function() {
 
   if (aa === 'a' && bb === 'd' && cc === 'g' && dd === 'j' && ee === 'm') {
     $("#result1").show();
+    $("#result2").hide();
+    $("#result3").hide();
+    $("#result4").hide();
 
-  } else if (aa === 'b') {
+  } else if (aa === 'b' && bb === 'e' && cc === 'h' && dd === 'k' && ee === 'n') {
     $("#result2").show();
-    
-  
+    $("#result1").hide();
+    $("#result3").hide();
+    $("#result4").hide();
 
+  } else if (aa === 'c' && bb === 'f' && cc === 'i' && dd === 'l' && ee === 'o') {
+    $("#result3").show();
+    $("#result1").hide();
+    $("#result2").hide();
+    $("#result4").hide();
+
+  } else 
+    $("#result4").show();
+  
+    
   });
 });
 
