@@ -1,7 +1,11 @@
 $(document).ready(function() {
-  $("#language").submit(function(event) {
-    
-    event.preventDefault();
+  $("#formOne").submit(function(event) {
+
+    /*Caps first letter of the name*/
+    const inputName = $("input#name").val();
+    const firstUpper = inputName.slice(0,1).toUpperCase();
+    const restLower = inputName.slice(1,inputName.length).toLowerCase();
+    const readyName = firstUpper + restLower;
 
     const aa = $("input:radio[name=aa]:checked").val();
     const bb = $("input:radio[name=bb]:checked").val();
@@ -9,28 +13,35 @@ $(document).ready(function() {
     const dd = $("input:radio[name=dd]:checked").val();
     const ee = $("input:radio[name=ee]:checked").val();
 
-  if (aa === 'a' && bb === 'd' && cc === 'g' && dd === 'j' && ee === 'm') {
-    $("#result1").fadeIn();
-    $("#result2").hide();
-    $("#result3").hide();
-    $("#result4").hide();
-   
-  } else if (aa === 'b' && bb === 'e' && cc === 'h' && dd === 'k' && ee === 'n') {
-    $("#result2").fadeIn();
-    $("#result1").hide();
-    $("#result3").hide();
-    $("#result4").hide();
+    if (aa === 'a' && bb === 'd' && cc === 'g' && dd === 'j' && ee === 'm') {
+      $("#python").fadeIn();
+      $("#ruby").hide();
+      $("#swift").hide();
+      $("#javascript").hide();
+     
+    } else if (aa === 'b' && bb === 'e' && cc === 'h' && dd === 'k' && ee === 'n') {
+      $("#ruby").fadeIn();
+      $("#python").hide();
+      $("#swift").hide();
+      $("#javascript").hide();
+  
+    } else if (aa === 'c' && bb === 'f' && cc === 'i' && dd === 'l' && ee === 'o') {
+      $("#swift").fadeIn();
+      $("#python").hide();
+      $("#ruby").hide();
+      $("#javascript").hide();
+  
+    } else 
+      $("#javascript").fadeIn();
+  
 
-  } else if (aa === 'c' && bb === 'f' && cc === 'i' && dd === 'l' && ee === 'o') {
-    $("#result3").fadeIn();
-    $("#result1").hide();
-    $("#result2").hide();
-    $("#result4").hide();
+      $(".name").text(readyName);
+      $("#result").show();
 
-  } else 
-    $("#result4").fadeIn()
-
+    event.preventDefault();
   });
 });
+
+
 
 

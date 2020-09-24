@@ -1,77 +1,73 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
- 
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Programming Language Suggester</title>
+  <title>QUIZ</title>
 </head>
-<body style="background-color: rgb(254, 233, 5);">
-  <h4>LET'S SEE WHICH LANGUAGE SUITS YOU THE BEST.</h4> 
+<body>
   <div class="container">
-      <form id="language">
-        <p>You are hanging on a cliff. Whose hand you'll take?</p>      
-        <input type="radio" name="aa" value="a">
-        <label for="a">Robot</label>
-        <input type="radio" name="aa" value="b">
-        <label for="b">Human</label>
-        <input type="radio" name="aa" value="c">
-        <label for="c">Which ever is closer</label>
-
-        <p>OS?</p>
-        <input type="radio" name="bb" value="d">
-        <label for="d">Did you mean SOS?</label>
-        <input type="radio" name="bb" value="e">
-        <label for="e">Android</label>
-        <input type="radio" name="bb" value="f">
-        <label for="f">iOS</label>    
-
-        <p>How soon will you find a pen on your desk?</p>    
-        <input type="radio" name="cc" value="g">
-        <label for="g">2 seconds</label>
-        <input type="radio" name="cc" value="h">
-        <label for="h">Which one?</label>
-        <input type="radio" name="cc" value="i">
-        <label for="i">It's in my hand</label>
-
-        <p>Would you like to hear a story?</p>     
-        <input type="radio" name="dd" value="j">  
-        <label for="j">Straight to the point please</label>
-        <input type="radio" name="dd" value="k">
-        <label for="k">Ooh excting</label>
-        <input type="radio" name="dd" value="l">
-        <label for="l">It's better be good</label>
-
-        <p>Working place?</p>
-        <input type="radio" name="ee" value="m">
-        <label for="m">Basement</label>
-        <input type="radio" name="ee" value="n">
-        <label for="n">Office</label>
-        <input type="radio" name="ee" value="o">
-        <label for="o">Lap</label>
-
-        <br><button type="submit" class="btn btn-outline-dark">SUBMIT</button><br>
-        
-        <div id="result1"><p>You should learn Python</p></div>
-        <div id="result2"><p>You should learn Ruby</p></div>
-        <div id="result3"><p>You should learn Swift</p></div>
-        <div id="result4"><p>You should learn JavaScript</p></div>
+    <h3>LET'S SEE WHICH LANGUAGE YOU SHOULD LEARN FIRST</h3>
+    <div>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="name"><strong>What is your name?</strong></label>
+          <input id="name" class="form-control" type="text">
+          <br>
+          <p> -You are hanging on a cliff. Whose hand would you take?</p>  
+          <input type="radio" id="aa" name="aa" value="a">
+          <label for="aa"> Robot</label>
+          <input type="radio" id="aa" name="aa" value="b">
+          <label for="aa"> Human</label>
+          <input type="radio" id="aa" name="aa" value="c">
+          <label for="aa"> Whoever is closer</label>
+          <br>
+          <p> -How soon will you find a pen on your desk?</p>  
+          <input type="radio" id="bb" name="bb" value="d">
+          <label for="aa"> 2 seconds</label>
+          <input type="radio" id="bb" name="bb" value="e">
+          <label for="aa"> Which color?</label>
+          <input type="radio" id="bb" name="bb" value="f">
+          <label for="aa"> It's in my hand</label>
+          <br>
+          <p> -Would you like to hear a story?</p>  
+          <input type="radio" id="cc" name="cc" value="g">
+          <label for="aa"> Straight to the point please</label>
+          <input type="radio" id="cc" name="cc" value="h">
+          <label for="aa"> It better be good</label>
+          <input type="radio" id="cc" name="cc" value="i">
+          <label for="aa"> Ooh excting</label>
+          <br>
+          <p> -Working space?</p>  
+          <input type="radio" id="dd" name="dd" value="j">
+          <label for="aa"> Beach</label>
+          <input type="radio" id="dd" name="dd" value="k">
+          <label for="aa"> Office</label>
+          <input type="radio" id="dd" name="dd" value="l">
+          <label for="aa"> Home</label>
+          <br>
+          <p> -OS?</p>  
+          <input type="radio" id="ee" name="ee" value="m">
+          <label for="aa"> Did you mean SOS?</label>
+          <input type="radio" id="ee" name="ee" value="n">
+          <label for="aa"> Android</label>
+          <input type="radio" id="ee" name="ee" value="o">
+          <label for="aa"> iOS</label>
+          <br>
+          <br>
+        <button type="submit" class="btn">SUBMIT</button>
       </form>
+    <div id="result">
+      <p>Hello, <span class="name"></span>. You should learn <span class="1"></span></p>
+      <div id="python"><h3><span class="firstname"></span><a href="https://www.python.org" target="_blank">  Python</a></h3></div>
+      <div id="ruby"><h3><a href="https://www.ruby-lang.org/en/" target="_blank">  Ruby</a></h3></div>
+      <div id="swift"><h3><a href="https://developer.apple.com/swift/" target="_blank">  Swift</a></h3></div>
+      <div id="javascript"><h3><a href="https://www.javascript.com/" target="_blank">  JavaScript</a></h3></div>
     </div>
+  </div>
 </body>
 </html>
-      
-      
-      
-      
-      
-      
-      
-      
-
-      
-  
 
 
