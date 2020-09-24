@@ -7,21 +7,18 @@
 
 ## Description
 
-This quiz consists of 5 questions with an option to chose from 3 different answers. Based on the combinations of the answers it will result with a suggestion which language one should learn first.
+This quiz consists of 5 questions with an option to chose from 3 different answers. Based on the combinations of the answers it will result in a suggestion which language one should learn first.
 
 ## Setup/Installation Requirements
 
 *  _repo: https://github.com/faustlarsen/Suggester_
 
+*  _Clone a code with Terminal_
+
 *  _Use Visual Studio Code to make changes_
 
 *  _webpage: https://faustlarsen.github.io/Suggester/_
   
-
-
-## Known Bugs
-
-
  
 ## Support and contact details
 
