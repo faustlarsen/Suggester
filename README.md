@@ -7,7 +7,7 @@
 
 ## Description
 
-This quiz consists of 5 questions with an option to chose from 3 different answers. Based on the combinations of the answers it will result with a suggestion which language one should lear first.
+This quiz consists of 5 questions with an option to chose from 3 different answers. Based on the combinations of the answers it will result with a suggestion which language one should learn first.
 
 ## Setup/Installation Requirements
 
@@ -21,8 +21,6 @@ This quiz consists of 5 questions with an option to chose from 3 different answe
 
 ## Known Bugs
 
- 
-If you press "submit" without picking any answers all 4 languages will appear. 
 
  
 ## Support and contact details

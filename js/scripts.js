@@ -31,9 +31,12 @@ $(document).ready(function() {
       $("#ruby").hide();
       $("#javascript").hide();
   
-    } else 
+    } else {
+      $("#python").hide();
+      $("#ruby").hide();
+      $("#swift").hide();
       $("#javascript").fadeIn();
-  
+    }
 
       $(".name").text(readyName);
       $("#result").show();
